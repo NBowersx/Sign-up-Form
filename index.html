@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOIN THE CLUB!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="icons8-phone-48.png">
+    
+</head>
+<body>
+    <div class="container" id="left">
+        <div class="company">
+        
+            <img src="Untitled-fotor-bg-remover-2023051685035.png" alt="" id="logo">
+            <h1 id="logo">Odin Solutions</h1>
+        </div>
+        <img src="sky.png" alt="" class="background" id="sky">
+        <img src="sand (1).png" alt="" class="background" id="sand">
+        <img src="beach (1).png" alt="" id="odin">
+    </div>
+
+    <div class="container" id="right">
+        <h3>hello</h3>
+        <p>thanks dor visiitoing please sigh up doe relaxitoinn </p>
+        <form action="" method="get" class="sign-up">
+            <div class="form-row">
+                <label for="first-name">First Name</label>
+                <input id="first-name" name="first-name" type="text" placeholder="First Name" required>
+            </div>
+            <div class="form-row">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+            </div>
+           
+            <div class="form-row">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" placeholder="email@gmail.com" required>
+            </div>
+            
+            <div class="form-row">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(xxx)-xxx-xxxx" 
+                pattern="\d{3}\d{3}\d{4}" >
+            </div>
+            <div class="form-row">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" 
+                placeholder="password" onfocusout="runPasswordCheck()" oninput="remove()" required>
+            </div> 
+            <div class="form-row">   
+                <label for="password-check">PASSWORD</label>
+                <input type="password" id="password-check" name="password-check" 
+                placeholder="password" onfocusout="runPasswordCheck()" oninput="remove()" required>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" required>
+                <label for="terms">I agree to the <a href="yaaaa.png">terms</a></label>
+            </div>
+            
+            <button type="submit" onclick="Password()">SUBMIT</button>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

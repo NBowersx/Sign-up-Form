@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+
+
+}
+.background{
+
+    position: absolute;
+    object-fit: cover;
+    height: 50%;
+    width: 40%;
+    z-index: -1;
+
+}
+.company{
+    position: absolute;
+    top: 20%;
+    width: 40vw;
+    color: black;
+    display: flex; 
+    justify-content: flex-start;
+}
+h1{
+    width: 30vw;
+    font-size: 4vw;
+}
+img#logo{
+    width: 10vw;
+}
+
+
+#left{
+    pointer-events: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+}
+#sky{
+    object-position: 2% -40px;
+}
+#sand{
+    margin-top: 50vh;
+    object-position: 4% 3px;
+}
+#odin{
+    width: 40vw;
+    height: 100vh;
+    object-fit: contain;
+    object-position: 30% ;
+}
+
+h3{
+    padding-top: 10vh;
+    color: white;
+    font-size: 40px;
+}
+p{
+    color: wheat;
+    font-size: 20px;
+}
+#right{
+    min-width: 400px;
+    background-color: #14045e;
+}
+
+.sign-up{
+    justify-content: center;
+    border: 1px;
+    border-style: solid;
+    border-radius: 1%;
+    border-color: aliceblue;
+    color: aliceblue;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+    margin-left: 5px;
+    margin-top: 25%;
+    
+ 
+}
+
+
+
+.form-row{
+    width: 50%;
+    padding-top: 25px;
+}
+button{
+    height: 50px;
+    background-color: #27bffb;
+    color: yellow;
+    border-radius: 40%;
+    border-color: yellow;
+    width: 80px;
+    
+}
+input {
+   border: 1px;
+   border-style: outset;
+   border-top: 0px;
+   border-left: 0px;
+   border-right: 0px;
+   border-radius: 5%;
+    padding: 5px;
+    max-width: 170px;
+    background-color: #14045e;
+    color: whitesmoke;
+
+
+    transition: 300ms
+    ease-in-out;
+
+}
+input:focus{
+    outline-color: yellow;
+
+    transform: scale(1.05);
+
+}
+
+
+
+
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+  }
+
+input:invalid{
+    border-color: red;
+
+}
+input:valid{
+    border: 10px;
+    border-style: double;
+    border-color: green;
+}
+  input:placeholder-shown{
+    border-color: blue;
+  }
+
+.wrong{
+    background-color: red;
+    animation: ease;
+    animation-duration: 3s;
+}
+.match{
+    background-color: green;
+}
