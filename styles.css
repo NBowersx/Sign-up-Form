@@ -15,6 +15,8 @@ body{
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     overflow: hidden;
 
 
@@ -48,7 +50,7 @@ img#logo{
     position: fixed;
 }
 
-#left{
+#lefnnt{
     pointer-events: none;
     -webkit-user-drag: none;
     user-select: none;
@@ -82,14 +84,13 @@ p{
     font-size: 20px;
 }
 #right{
-    width: 100%;
-    min-width: 400px;
+    width: 60vw;
+    height: 100vh;
     background-color: #14045e;
     font-family: norse;
 }
 
 .sign-up{
-    justify-content: center;
     border: 1px;
     border-style: solid;
     border-radius: 1%;
@@ -98,7 +99,6 @@ p{
     min-height: 500px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     overflow: visible;
     margin-left: 4%;
     margin-right: 4%;
@@ -112,6 +112,9 @@ p{
 .form-row{
     width: 50%;
     padding-top: 25px;
+    background-color: red;
+    border-radius: 90%;
+    flex: 0 0 50%;
 }
 button{
     height: 50px;
@@ -123,14 +126,17 @@ button{
     
 }
 input {
-   border: 1px;
+
+   border: 2px;
    border-style: outset;
    border-top: 0px;
    border-left: 0px;
    border-right: 0px;
    border-radius: 5%;
-   width: 80%;
+    width: 80%;
     padding: 5px;
+    margin-left: 7%;
+    margin-top: 10%;
     background-color: #14045e;
     color: whitesmoke;
 
@@ -172,3 +178,51 @@ input:invalid{
 .match{
     background-color: green;
 }
+
+
+@media (max-width: 600px){
+    body{
+        overflow: hidden;
+    }
+    .company{
+        top: 0%;
+        width: 100vw;
+        color: black;
+        font-family: pixel;
+    }
+    h1{
+        width: 100vw;
+        font-size: 10vw;
+    }
+    img#logo{
+        width: 20vw;
+    }
+    #odin{
+        width: 100vw;
+        height: 30vh;
+        object-fit: cover;
+    }
+    #left{
+        height: 30vh;
+        width: 100vw;
+    }
+    #right{
+        height: 70vh;
+        width: 100vw;
+    }
+    h3{
+        padding-top: 0;
+        font-size: 40px;
+      
+    }
+
+    .form-row{
+        flex-basis: 100%
+    }
+    .sign-up{
+        margin-top: 5%;
+        
+     
+    }
+}
+
