@@ -137,7 +137,7 @@ p{
     background-color: green;
 }
 
-@media (max-width: 700px){
+@media (max-width: 750px){
     body{
         overflow: hidden;
     }
@@ -150,6 +150,7 @@ p{
     h1{
         width: 100%;
         font-size: 10vw;
+        margin-top: 10px;
     }
     img#logo{
         width: 20vw;
@@ -177,9 +178,8 @@ p{
         flex-basis: 100%
     }
     .sign-up{
-        margin-top: 5%;
-        
-     
+        grid-template-columns: 1fr;
+        margin-top: 05%;
     }
 }
 
