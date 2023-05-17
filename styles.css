@@ -12,7 +12,7 @@
     src: url(Norse-Bold.otf);
 }
 body{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -33,7 +33,7 @@ body{
 .company{
     position: absolute;
     top: 20%;
-    width: 40vw;
+    width: 40%;
     color: black;
     display: flex; 
     justify-content: flex-start;
@@ -46,11 +46,7 @@ h1{
 img#logo{
     width: 10vw;
 }
-.form-row label{
-    position: fixed;
-}
-
-#lefnnt{
+#left{
     pointer-events: none;
     -webkit-user-drag: none;
     user-select: none;
@@ -58,6 +54,9 @@ img#logo{
     -webkit-user-select: none;
     -ms-user-select: none;
 
+}
+.description{
+    margin-left: 25%;
 }
 #sky{
     object-position: 2% -40px;
@@ -72,6 +71,15 @@ img#logo{
     object-fit: contain;
     object-position: 30% ;
 }
+.form-row{
+    position: relative;
+}
+.form-row label{
+    font-size: 20px;
+    position: absolute;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.452);
+}
 
 h3{
     padding-top: 10vh;
@@ -84,7 +92,7 @@ p{
     font-size: 20px;
 }
 #right{
-    width: 60vw;
+    width: 60%;
     height: 100vh;
     background-color: #14045e;
     font-family: norse;
@@ -96,78 +104,28 @@ p{
     border-radius: 1%;
     border-color: aliceblue;
     color: aliceblue;
-    min-height: 500px;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: visible;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-top: 25%;
-    
- 
+    display: grid;
+    gap: 50px;
+    padding: 55px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
-
-
-
-.form-row{
-    width: 50%;
-    padding-top: 25px;
-    background-color: red;
-    border-radius: 90%;
-    flex: 0 0 50%;
+.form-row input{
+    width: 100%;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    font-family: norse;
 }
-button{
-    height: 50px;
-    background-color: #27bffb;
-    color: yellow;
-    border-radius: 40%;
-    border-color: yellow;
-    width: 80px;
-    
-}
-input {
-
-   border: 2px;
-   border-style: outset;
-   border-top: 0px;
-   border-left: 0px;
-   border-right: 0px;
-   border-radius: 5%;
-    width: 80%;
-    padding: 5px;
-    margin-left: 7%;
-    margin-top: 10%;
-    background-color: #14045e;
-    color: whitesmoke;
-
-
-    transition: 300ms
-    ease-in-out;
-
-}
-input:focus{
-    outline-color: yellow;
-
-    transform: scale(1.05);
-
-}
-
-
-
 
 
   input:-webkit-autofill,
   input:-webkit-autofill:focus {
     transition: background-color 600000s 0s, color 600000s 0s;
-  }
-
-input:invalid{
-    border-color: red;
-
-}
-
-  input:placeholder-shown{
-    border-color: blue;
   }
 
 .wrong{
@@ -179,8 +137,7 @@ input:invalid{
     background-color: green;
 }
 
-
-@media (max-width: 600px){
+@media (max-width: 700px){
     body{
         overflow: hidden;
     }
@@ -191,7 +148,7 @@ input:invalid{
         font-family: pixel;
     }
     h1{
-        width: 100vw;
+        width: 100%;
         font-size: 10vw;
     }
     img#logo{
