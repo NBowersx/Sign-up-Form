@@ -1,4 +1,4 @@
-console.log("1")
+
 
 
 
@@ -51,11 +51,17 @@ function passwordCheck(){
     }
 }
 
-function move(){
-    var yo = document.getElementById("Fname")
-    yo.classList.add("move")
-    console.log("class added")
-}
+function move(element) {
+    element.classList.add("move");
+    console.log("Class added to element with ID: " + element.id);
+  }
+  function back(element, input) {
+    console.log('hi')
+    console.log(element.value)
+    if(element.value === ''){
+    input.classList.remove("move");
+    console.log("Class added to element with ID: " + element.id);}
+  }
 
 function remove(){
     var passwordField = document.getElementById("password")

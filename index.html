@@ -28,33 +28,36 @@
         </div>
         <form action="" method="get" class="sign-up">
             <div class="form-row">
-                <label for="first-name" id="Fname">First Name</label>
-                <input id="first-name" name="first-name" onfocus="move()" type="text"  required>
+                <label for="firstName" id="fName">First Name</label>
+                <input id="firstName" name="first-name" onfocus="move(fName)" type="text"  required
+                onfocusout="back(firstName, fName)"    >
             </div>
             <div class="form-row">
-                <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" name="last-name">
+                <label for="lastName" id="lName">Last Name</label>
+                <input type="text" name="lastName"
+                onfocus="move(lName)" onfocusout="back(lastName, lName)">
             </div>
            
             <div class="form-row">
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email"  required>
+                <label for="email" id="eMail">EMAIL</label>
+                <input type="email"  name="email"  required id="emailInput"
+                onfocus="move(eMail)" onfocusout="back(emailInput, eMail)">
             </div>
             
             <div class="form-row">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone"  
-                pattern="\d{3}\d{3}\d{4}" >
+                <label for="phone" id="phoneNum">Phone Number</label>
+                <input type="tel" name="phone" id="phone" 
+                pattern="\d{3}\d{3}\d{4}" onfocus="move(phoneNum)" onfocusout="back(phone, phoneNum)">
             </div>
             <div class="form-row">
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password" 
-                onfocusout="runPasswordCheck()" oninput="remove()" required>
+                <label for="password" id="passWord">PASSWORD</label>
+                <input type="password" id="passwordInput" name="password" onfocus="move(passWord)" onfocusout="back(passwordInput, passWord)"
+                required>
             </div> 
             <div class="form-row">   
-                <label for="password-check">PASSWORD</label>
-                <input type="password" id="password-check" name="password-check" 
-                onfocusout="runPasswordCheck()" oninput="remove()" required>
+                <label for="password-check" id="passCheck">PASSWORD</label>
+                <input type="password" id="dj" name="password-check"  required
+                onfocus="move(passCheck)" onfocusout="back(dj, passCheck)">
             </div>
 
             <div class="checkbox">
