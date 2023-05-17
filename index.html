@@ -24,7 +24,7 @@
     <div class="container" id="right">
         <div class="description">
             <h3>hello</h3>
-            <p>thanks dor visiitoing please sigh up doe relaxitoinn </p>
+            <p>thanks dor visiitoing please sigh up doe relaxitoinn. signing up helps us get the ting in the place wen u need it i guess. we dont really know what is happening. </p>
         </div>
         <form action="" method="get" class="sign-up">
             <div class="form-row">
@@ -51,13 +51,14 @@
             </div>
             <div class="form-row">
                 <label for="password" id="passWord">PASSWORD</label>
-                <input type="password" id="passwordInput" name="password" onfocus="move(passWord)" onfocusout="back(passwordInput, passWord)"
-                required>
+                <input type="password" id="passwordInput" name="password" onfocus="move(passWord)" onfocusout="back(passwordInput, passWord); passVal(passwordInput, dj, passCheck) "
+                required oninput="removeWrong(dj, passCheck)">
             </div> 
             <div class="form-row">   
                 <label for="password-check" id="passCheck">PASSWORD</label>
                 <input type="password" id="dj" name="password-check"  required
-                onfocus="move(passCheck)" onfocusout="back(dj, passCheck)">
+                onfocus="move(passCheck)" onfocusout="back(dj, passCheck); passVal(passwordInput, dj, passCheck)"
+                oninput="removeWrong(dj, passCheck)">
             </div>
 
             <div class="checkbox">

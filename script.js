@@ -1,72 +1,18 @@
-
-
-
-
-
-
-
-
-
-function runPasswordCheck(){
-    var password1= document.getElementById('password').value
-    var password2= document.getElementById('password-check').value
-    var passwordField = document.getElementById("password")
-    var passwordFieldTwo = document.getElementById("password-check")
-    console.log(password1)
-    if (password1 === '' || password2 === ''){
-        console.log('hello there')
-        passwordField.classList.remove("wrong")
-        passwordFieldTwo.classList.remove("wrong")
-
-    }
-
-    else{
-        passwordCheck()
-    }
-
-    
-
-    
-    
-    
-}
-function passwordCheck(){
-    var password1= document.getElementById('password').value
-    var password2= document.getElementById('password-check').value
-    var passwordField = document.getElementById("password")
-    var passwordFieldTwo = document.getElementById("password-check")
-    console.log(password1+password2)
-    if (password1 != password2){
-
-        passwordField.classList.add("wrong")
-        passwordFieldTwo.classList.add("wrong")
-        console.log("dont match")
-    }
-    if (password1 === password2){
-        console.log('CORRECT')
-
-        passwordField.classList.remove("wrong")
-        passwordFieldTwo.classList.remove("wrong")
-
-    }
-}
-
 function move(element) {
     element.classList.add("move");
-    console.log("Class added to element with ID: " + element.id);
   }
-  function back(element, input) {
-    console.log('hi')
-    console.log(element.value)
+function back(element, input) {
     if(element.value === ''){
     input.classList.remove("move");
-    console.log("Class added to element with ID: " + element.id);}
+    }
   }
-
-function remove(){
-    var passwordField = document.getElementById("password")
-    var passwordFieldTwo = document.getElementById("password-check")
-    passwordField.classList.remove("wrong")
-    passwordFieldTwo.classList.remove("wrong")
-    console.log("2")
+function passVal(p1, p2, label){
+  if(p1.value != p2.value & p1.value != '' & p2.value != ''){
+  label.classList.add('wrong')
+  p2.classList.add('wrong')
+  }
+}
+function removeWrong(input, label){
+  label.classList.remove('wrong')
+  input.classList.remove('wrong')
 }

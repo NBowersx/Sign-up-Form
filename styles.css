@@ -57,7 +57,7 @@ img#logo{
 
 }
 .description{
-    margin-left: 25%;
+    text-align: center;
 }
 #sky{
     object-position: 2% -40px;
@@ -87,6 +87,7 @@ img#logo{
     -webkit-user-select: none;
     -ms-user-select: none;
 
+    
 }
 
 h3{
@@ -98,10 +99,11 @@ h3{
 p{
     color: wheat;
     font-size: 20px;
+    margin: 15px;
 }
 #right{
     width: 60%;
-    height: 100vh;
+    height: 100%;
     background-color: #14045e;
     font-family: norse;
 }
@@ -123,22 +125,18 @@ p{
 .form-row input{
     width: 100%;
     font-size: 20px;
+    padding: 4px;
     background-color: transparent;
     color: white;
     border: none;
     border-bottom: 1px solid white;
     font-family: pixel;
-    
 }
-.form-row label{
- 
-}
-
   input:-webkit-autofill,
   input:-webkit-autofill:focus {
     transition: background-color 600000s 0s, color 600000s 0s;
   }
-label + input:focus{
+input:focus{
     outline: none;
     border-color: rgb(187, 146, 12);
     color: yellow; 
@@ -147,9 +145,9 @@ label + input:focus{
 
 }
 label.move{
-    transition: all .4s;
+    transition: all .6s;
     background-color: rgb(250, 137, 0);
-    transform: translateX(1px) translateY(-23px);
+    transform: translateX(1px) translateY(-18px) scale(.85);
     color: rgb(0, 0, 0);
 }
 label.move ~ input{
@@ -160,17 +158,32 @@ label.move ~ input{
 input:valid{
     border-color: green;
 }
-
 input:empty{
     border-color: rgb(255, 255, 255);
 }
-
-.form-row .wrong input{
-    border: 1px solid red;
+@keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+#dj.wrong{
+    border-color: red;
+    animation: shake 0.1s ease-in-out;
+}
+label.wrong{
     background-color: red;
-    animation: ease;
-    animation-duration: 3s;
-    color: green;
 }
 
 @media (max-width: 750px){
