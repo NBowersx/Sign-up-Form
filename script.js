@@ -51,6 +51,12 @@ function passwordCheck(){
     }
 }
 
+function move(){
+    var yo = document.getElementById("Fname")
+    yo.classList.add("move")
+    console.log("class added")
+}
+
 function remove(){
     var passwordField = document.getElementById("password")
     var passwordFieldTwo = document.getElementById("password-check")

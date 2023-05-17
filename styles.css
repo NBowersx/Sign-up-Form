@@ -42,6 +42,7 @@ body{
 h1{
     width: 30vw;
     font-size: 4vw;
+    margin-top: 10px;
 }
 img#logo{
     width: 10vw;
@@ -79,6 +80,13 @@ img#logo{
     position: absolute;
     pointer-events: none;
     color: rgba(255, 255, 255, 0.452);
+    pointer-events: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
 }
 
 h3{
@@ -119,22 +127,50 @@ p{
     color: white;
     border: none;
     border-bottom: 1px solid white;
-    font-family: norse;
+    font-family: pixel;
+    
 }
-
+.form-row label{
+ 
+}
 
   input:-webkit-autofill,
   input:-webkit-autofill:focus {
     transition: background-color 600000s 0s, color 600000s 0s;
   }
+label + input:focus{
+    outline: none;
+    border-color: rgb(187, 146, 12);
+    color: yellow; 
+    bottom: 20px;
+    
 
-.wrong{
+}
+label.move{
+    transition: all .4s;
+    background-color: rgb(250, 137, 0);
+    transform: translateX(1px) translateY(-23px);
+    color: rgb(0, 0, 0);
+}
+label.move ~ input{
+    transition: all .4s;
+    transform: scale(1.03);
+    border: 3px solid orange;
+}
+input:valid{
+    border-color: green;
+}
+
+input:empty{
+    border-color: rgb(255, 255, 255);
+}
+
+.form-row .wrong input{
+    border: 1px solid red;
     background-color: red;
     animation: ease;
     animation-duration: 3s;
-}
-.match{
-    background-color: green;
+    color: green;
 }
 
 @media (max-width: 750px){
@@ -150,7 +186,6 @@ p{
     h1{
         width: 100%;
         font-size: 10vw;
-        margin-top: 10px;
     }
     img#logo{
         width: 20vw;
