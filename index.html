@@ -28,7 +28,7 @@
         </div>
         <form action="" method="get" class="sign-up">
             <div class="form-row">
-                <label for="firstName" id="fName">First Name</label>
+                <label for="firstName" id="fName">*First Name</label>
                 <input id="firstName" name="first-name" onfocus="move(fName)" type="text"  required
                 onfocusout="back(firstName, fName)" maxlength="15"   >
             </div>
@@ -39,7 +39,7 @@
             </div>
            
             <div class="form-row">
-                <label for="email" id="eMail">EMAIL</label>
+                <label for="email" id="eMail">*EMAIL</label>
                 <input type="email"  name="email"  required id="emailInput"
                 onfocus="move(eMail)" onfocusout="back(emailInput, eMail)" maxlength="50">
             </div>
@@ -47,16 +47,16 @@
             <div class="form-row">
                 <label for="phone" id="phoneNum">Phone Number</label>
                 <input type="tel" name="phone" id="phone" 
-                onfocus="move(phoneNum)" onfocusout="back(phone, phoneNum)"
-                maxlength="10">
+                onfocus="move(phoneNum)" onfocusout="back(phone, phoneNum)" oninput="numberFormat(phone)"
+                maxlength="10" minlength="10">
             </div>
             <div class="form-row">
-                <label for="password" id="passWord">PASSWORD</label>
+                <label for="password" id="passWord">*PASSWORD</label>
                 <input type="password" id="passwordInput" name="password" onfocus="move(passWord)" onfocusout="back(passwordInput, passWord); passVal(passwordInput, dj, passCheck) "
                 required oninput="removeWrong(dj, passCheck)" maxlength="30">
             </div> 
             <div class="form-row">   
-                <label for="password-check" id="passCheck">PASSWORD</label>
+                <label for="password-check" id="passCheck">*PASSWORD</label>
                 <input type="password" id="dj" name="password-check"  required
                 onfocus="move(passCheck)" onfocusout="back(dj, passCheck); passVal(passwordInput, dj, passCheck)"
                 oninput="removeWrong(dj, passCheck)" maxlength="30">
@@ -67,7 +67,7 @@
                 <label for="terms">I agree to the <a href="yaaaa.png">terms</a></label>
             </div>
             
-            <button type="submit" onclick="Password()">SUBMIT</button>
+            <button type="submit" id='mySubmit' onclick="passVal(passwordInput, passCheck)">SUBMIT</button>
         </form>
     </div>
 </body>
