@@ -20,10 +20,13 @@ function removeWrong(input, label){
   document.getElementById("mySubmit").disabled = false;
 }
 function numberFormat(e){
+  //disable all non numbers to be entered
  var number= e.value.replace(/\D/g, '');
- console.log('fg')
- console.log(e.value)
- e.value= number
- console.log(e.value)
- console.log(number)
+ //format number as (xxx)-xxx-xxxx
+ var formatNum = '('+number.substring(0,3)+')'+number.substring(3,6)+'-'+number.substring(6,10)
+
+ console.log(number.length)
+ 
+ 
+ e.value= formatNum
 }
