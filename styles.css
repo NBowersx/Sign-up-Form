@@ -99,7 +99,7 @@ h3{
 p{
     color: wheat;
     font-size: 20px;
-    margin: 15px;
+    margin: 8%;
 }
 #right{
     width: 60%;
@@ -118,7 +118,7 @@ p{
     gap: 50px;
     padding: 55px;
     grid-template-columns: 1fr 1fr;
-    margin-top: 20%;
+    margin-top: 5%;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -197,9 +197,10 @@ span{
     transition: color .5s ease;
     color: transparent;
 }
-a:link,a:visited{
+a{
     color: orange;
 }
+
 
 input.error{
     transition: border-color .2s ease-in;
@@ -212,6 +213,46 @@ span.error ~ input{
     border: 20px solid gold;
     background-color: gold;
 }
+dialog{
+    background-color: #0A3643;
+    overflow-y: scroll;
+    margin: auto;
+    width: 40%;
+    max-width: 700px;
+    max-height: 750px;
+    text-align: center;
+    color: wheat;
+    font-size: 20px;
+}
+h2{
+    padding-top: 50px;
+    font-size: 40px;
+}
+h5{
+    font-size: 35px;
+}
+li,p{
+    margin: 10%;
+}
+.address{
+    margin: 0;
+    margin-bottom: 20px;
+}
+button.x{
+    position: sticky;
+    top: 10px;
+    left: 5px;
+    padding: 10px;
+    border-radius: 100%;
+    font-size: 15px;
+    background-color: orange;
+    float: left;
+
+}
+
+
+
+
 
 @media (max-width: 750px){
     body{

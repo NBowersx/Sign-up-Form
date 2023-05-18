@@ -36,4 +36,9 @@ function invalidField(event, message){
 function removeSpan(message){
   message.classList.remove('error')
 }
- 
+function terms(x){
+  x.showModal()
+}
+function closeTerm(x){
+  x.close()
+}

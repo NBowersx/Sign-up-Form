@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="icons8-phone-48.png">
     
 </head>
-<body>
+<body >
     <div class="container" id="left">
         <div class="company">
         
@@ -23,8 +23,8 @@
 
     <div class="container" id="right">
         <div class="description">
-            <h3>hello</h3>
-            <p>thanks dor visiitoing please sigh up doe relaxitoinn. signing up helps us get the ting in the place wen u need it i guess. we dont really know what is happening. </p>
+            <h3>hello welcome your new favorite place</h3>
+            <p>thanks dor visiitoing please sigh up doe relaxitoinn. signing up helps us get the ting in the place wen u need it i guess. we dont really know what is happening. these are words some are sum arnt but yeh. words to fill void look like tx. very interesting i sure bet odin is a cool figure. i lik diff mytolgyes lke nsroes adn gerek.</p>
         </div>
         <form action="" method="get" class="sign-up">
             <div class="form-row">
@@ -70,12 +70,51 @@
 
             <div class="checkbox">
                 <input type="checkbox" required>
-                <label for="terms">I agree to the <a href="yaaaa.png">terms</a></label>
+                <label for="terms">I agree to the <a onclick="terms(termsDia)">terms</a></label>
             </div>
             
             <button type="submit" id='mySubmit' onclick="passVal(passwordInput, passCheck)">SUBMIT</button>
         </form>
+        <dialog id="termsDia" >
+            <button class="x" onclick="closeTerm(termsDia)">x</button>
+            <h2>Odin Solutions Terms of Service</h2>
+            <p>Please read these Terms of Service ("Agreement") carefully before using the services provided by Odin Solutions. This Agreement sets forth the legally binding terms and conditions for your use of the services.</p>
+            <h5>Acceptance of Terms</h5>
+            <p>By accessing or using the services provided by Odin Solutions, you agree to be bound by this Agreement and our Privacy Policy. If you do not agree with any of these terms, you are prohibited from using or accessing the services. </p>
+            <h5>Description of Services</h5>
+            <p>Odin Solutions provides various technology solutions and services, including but not limited to software development, consulting, and support. The specific details of the services may be provided in separate agreements or statements of work.</p>
+            <h5>User Responsibilities</h5>
+            <p></p>
+            <ol >
+                <li>You must be at least 18 years old to use our services or have the consent of a parent or legal guardian.</li>
+                <li>You are responsible for maintaining the security of your account credentials and ensuring the accuracy of any information you provide to us.</li>
+                <li>You agree not to use the services for any illegal, harmful, or unauthorized purposes.</li>
+                <li>You are solely responsible for any content you submit, display, or transmit through the services.</li>
+            
+            </ol>
+            <p></p>
+            <h5>Intellectual Property Rights</h5>
+            <p>Odin Solutions retains all intellectual property rights to its services, including software, trademarks, logos, and other proprietary materials. You may not use, reproduce, distribute, or modify any content from the services without prior written consent from Odin Solutions.</p>
+            <h5>Limitation of Liability</h5>
+            <p>Odin Solutions shall not be liable for any direct, indirect, incidental, consequential, or exemplary damages arising from the use or inability to use the services. We make no warranties or representations about the accuracy or completeness of the services.</p>
+            <h5>Termination</h5>
+            <p>Odin Solutions reserves the right to terminate or suspend your access to the services at any time without prior notice or liability for any reason, including but not limited to violation of this Agreement.</p>
+            <h5>Governing Law</h5>
+            <p>This Agreement shall be governed by and construed in accordance with the laws of the jurisdiction in which Odin Solutions is registered, without regard to its conflict of law provisions.</p>
+            <h5>Changes to the Agreement</h5>
+            <p>Odin Solutions reserves the right to modify or replace this Agreement at any time. Your continued use of the services after any such changes shall constitute your consent to the updated Agreement.</p>
+            <h5>Contact Information</h5>
+            <p>If you have any questions or concerns regarding this Agreement, please contact us at:
+</p>
+               <p class="address">Odin Solutions</p> 
+                <p class="address">123 Main Street</p> 
+                <p class="address">City, State, ZIP</p> 
+                <p class="address">Email: info@odinsolutions.com</p> 
+                <p class="address"> Phone: (123) 456-7890</p> 
+
+        </dialog>
     </div>
 </body>
+
 <script src="script.js"></script>
 </html>
