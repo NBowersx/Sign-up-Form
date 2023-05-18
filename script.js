@@ -25,8 +25,15 @@ function numberFormat(e){
  //format number as (xxx)-xxx-xxxx
  var formatNum = '('+number.substring(0,3)+')'+number.substring(3,6)+'-'+number.substring(6,10)
 
- console.log(number.length)
- 
- 
  e.value= formatNum
 }
+
+function invalidField(event, message){
+  event.preventDefault();
+  message.classList.add('error')
+
+}
+function removeSpan(message){
+  message.classList.remove('error')
+}
+ 
