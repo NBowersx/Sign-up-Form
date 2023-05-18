@@ -257,6 +257,8 @@ button.x{
 @media (max-width: 750px){
     body{
         overflow: hidden;
+        overflow-y: scroll;
+        background-color: #0A3643;
     }
     .company{
         top: 0%;
