@@ -30,35 +30,36 @@
             <div class="form-row">
                 <label for="firstName" id="fName">First Name</label>
                 <input id="firstName" name="first-name" onfocus="move(fName)" type="text"  required
-                onfocusout="back(firstName, fName)"    >
+                onfocusout="back(firstName, fName)" maxlength="15"   >
             </div>
             <div class="form-row">
                 <label for="lastName" id="lName">Last Name</label>
                 <input type="text" name="lastName"
-                onfocus="move(lName)" onfocusout="back(lastName, lName)">
+                onfocus="move(lName)" onfocusout="back(lastName, lName)" maxlength="15">
             </div>
            
             <div class="form-row">
                 <label for="email" id="eMail">EMAIL</label>
                 <input type="email"  name="email"  required id="emailInput"
-                onfocus="move(eMail)" onfocusout="back(emailInput, eMail)">
+                onfocus="move(eMail)" onfocusout="back(emailInput, eMail)" maxlength="50">
             </div>
             
             <div class="form-row">
                 <label for="phone" id="phoneNum">Phone Number</label>
                 <input type="tel" name="phone" id="phone" 
-                pattern="\d{3}\d{3}\d{4}" onfocus="move(phoneNum)" onfocusout="back(phone, phoneNum)">
+                onfocus="move(phoneNum)" onfocusout="back(phone, phoneNum)"
+                maxlength="10">
             </div>
             <div class="form-row">
                 <label for="password" id="passWord">PASSWORD</label>
                 <input type="password" id="passwordInput" name="password" onfocus="move(passWord)" onfocusout="back(passwordInput, passWord); passVal(passwordInput, dj, passCheck) "
-                required oninput="removeWrong(dj, passCheck)">
+                required oninput="removeWrong(dj, passCheck)" maxlength="30">
             </div> 
             <div class="form-row">   
                 <label for="password-check" id="passCheck">PASSWORD</label>
                 <input type="password" id="dj" name="password-check"  required
                 onfocus="move(passCheck)" onfocusout="back(dj, passCheck); passVal(passwordInput, dj, passCheck)"
-                oninput="removeWrong(dj, passCheck)">
+                oninput="removeWrong(dj, passCheck)" maxlength="30">
             </div>
 
             <div class="checkbox">
