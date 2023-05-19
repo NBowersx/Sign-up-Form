@@ -199,19 +199,23 @@ span{
 }
 a{
     color: orange;
+    border-bottom: 1px orange solid;
 }
-
+a:hover{
+   cursor: pointer;
+}
+#box:hover{
+    cursor: pointer;
+}
 
 input.error{
     transition: border-color .2s ease-in;
     border-color: red;
+    animation: shake 0.1s ease-in-out;
 }
 input.error + span{
     color: red;
-}
-span.error ~ input{
-    border: 20px solid gold;
-    background-color: gold;
+    
 }
 dialog{
     background-color: #0A3643;
@@ -249,9 +253,11 @@ button.x{
     float: left;
 
 }
-
-
-
+.signIN{
+    text-align: center;
+    margin-top: 10px;
+    color: wheat;
+}
 
 
 @media (max-width: 750px){

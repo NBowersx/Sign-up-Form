@@ -10,7 +10,7 @@ function passVal(p1, p2, label){
   if(p1.value != p2.value & p1.value != '' & p2.value != ''){
   label.classList.add('wrong')
   p2.classList.add('wrong')
-  console.log('jeb!')
+  p2.classList.add('error')
   document.getElementById("mySubmit").disabled = true;
   }
 }
@@ -30,6 +30,8 @@ function numberFormat(e){
 
 function invalidField(event, message){
   event.preventDefault();
+  message.classList.remove('error');
+  void message.offsetWidth;
   message.classList.add('error')
 
 }
