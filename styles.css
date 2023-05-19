@@ -194,8 +194,8 @@ button:hover{
     background-color: orange;
 }
 span{
-    transition: color .5s ease;
-    color: transparent;
+    visibility: hidden;
+    color: wheat;
 }
 a{
     color: orange;
@@ -214,6 +214,8 @@ input.error{
     animation: shake 0.1s ease-in-out;
 }
 input.error + span{
+    visibility: visible;
+    transition: .5s color ease;
     color: red;
     
 }
