@@ -227,7 +227,15 @@ dialog{
     text-align: center;
     color: wheat;
     font-size: 20px;
+
 }
+dialog::-webkit-scrollbar, dialog::-webkit-scrollbar-track {
+    width: 5px;
+    background-color: black;
+  }
+  dialog::-webkit-scrollbar-thumb {
+    background: orange;
+  }
 h2{
     padding-top: 50px;
     font-size: 40px;
@@ -251,6 +259,7 @@ button.x{
     font-size: 15px;
     background-color: orange;
     float: left;
+    font-family: 'Courier New', Courier, monospace;
 
 }
 .signIN{
