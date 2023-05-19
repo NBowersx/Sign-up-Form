@@ -289,6 +289,13 @@ label#terms{
         overflow-y: scroll;
         background-color: #0A3643;
     }
+    body::-webkit-scrollbar, body::-webkit-scrollbar-track {
+        background-color: #0A3643;
+        width: 10px;
+      }
+    body::-webkit-scrollbar-thumb {
+        background: orange;
+      }
     .company{
         top: 0%;
         width: 100vw;
@@ -333,6 +340,7 @@ label#terms{
     @media (max-height: 750px) {
         body{
             overflow: scroll;
+            
         }
         #right{
             position: fixed;
