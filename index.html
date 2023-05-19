@@ -71,10 +71,11 @@
 
             <div class="checkbox">
                 <input type="checkbox" id="box" required>
-                <label for="terms">I agree to the <a onclick="terms(termsDia)">terms</a></label>
+                <label for="terms" id="terms">I agree to the <a onclick="terms(termsDia)">terms</a></label>
+                <button type="submit" id='mySubmit' onclick="passVal(passwordInput, passCheck)">SUBMIT</button>
             </div>
             
-            <button type="submit" id='mySubmit' onclick="passVal(passwordInput, passCheck)">SUBMIT</button>
+            
         </form>
         <dialog id="termsDia" >
             <button class="x" onclick="closeTerm(termsDia)">x</button>

@@ -185,7 +185,8 @@ button{
     max-width: 80px;
     font-family: norse;
     font-size: 16px;
-    
+    -webkit-user-drag: none;
+    user-select: none;
 }
 
 button:hover{
@@ -215,7 +216,7 @@ input.error{
 }
 input.error + span{
     visibility: visible;
-    transition: .5s color ease;
+    transition: .1s color ease;
     color: red;
     
 }
@@ -233,11 +234,11 @@ dialog{
 }
 dialog::-webkit-scrollbar, dialog::-webkit-scrollbar-track {
     width: 5px;
-    background-color: black;
   }
   dialog::-webkit-scrollbar-thumb {
     background: orange;
   }
+
 h2{
     padding-top: 50px;
     font-size: 40px;
@@ -268,9 +269,20 @@ button.x{
     text-align: center;
     margin-top: 10px;
     color: wheat;
+    padding: 10px;
+}
+div.checkbox{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 15px 50% 50px;
+    grid-template-rows: 20px;
+}
+label#terms{
+    margin-left: 5px;
 }
 
-
+/*small screens*/
 @media (max-width: 750px){
     body{
         overflow: hidden;
@@ -280,8 +292,6 @@ button.x{
     .company{
         top: 0%;
         width: 100vw;
-        color: black;
-        font-family: pixel;
     }
     h1{
         width: 100%;
@@ -307,6 +317,10 @@ button.x{
         padding-top: 0;
         font-size: 40px;
       
+    }
+    p{
+        margin-top: 5px;
+        margin-bottom: 10px;
     }
 
     .form-row{
@@ -339,5 +353,11 @@ button.x{
             padding: 5px;
         }
     }
+    dialog{
+        width: 80%;
+    }
+    div.checkbox{
+        grid-column-start: 1;
+        grid-column-end: 2;}
 }
 
